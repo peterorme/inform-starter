@@ -3,7 +3,7 @@
 INFORM_HOME=~/Documents/private/inform10
 
 # OUTPUT is how you want to name your output file, minus extension.
-OUTPUT="Pot Of Petunias"
+OUTPUT="My Project"
 
 .DEFAULT_GOAL := blorb
 
