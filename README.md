@@ -27,7 +27,7 @@ cd inform/
 bash scripts/first.sh
 ```
 
-Alright. You could add those to your path, I guess, but what I settled on is actually just dropping in a `Makefile` in my project folder. 
+Alright. You could add those to your path, I guess, but what I settled on is actually just dropping in a [`Makefile`](Makefile) in my project folder. 
 
 So here's how. 
 
