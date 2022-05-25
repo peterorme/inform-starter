@@ -1,6 +1,6 @@
 # Inform Starter
 
-So you want to be able to compile and run Inform from the command line? 
+So you want to be able to compile and run [Inform](http://inform7.com/) from the command line? 
 
 I mean, obviously - this is for me, *I* am that person who wants to be like the cool kids and start using the [Open sourced Inform](https://github.com/ganelson/inform). 
 
@@ -56,7 +56,7 @@ And then whenever you want to compile, just go
 make
 ```
 
-If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. 
+If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. Another good way is to install [Spatterlight](http://ccxvii.net/spatterlight/) - `brew install spatterlight` and open the output blorb file. 
 
 ### Adding extensions
 
