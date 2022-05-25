@@ -16,7 +16,6 @@ inform6:
 glulx: inform6
 	${INFORM_HOME}/inform/inform6/Tangled/inform6 -E2wSDG ./Build/auto.inf ./Build/output.ulx
 
-
 blorb: glulx
 	${INFORM_HOME}/inform/inblorb/Tangled/inblorb ./Release.blurb ./Build/output.gblorb
 	cp ./Build/output.gblorb ./Release/${OUTPUT}.gblorb
