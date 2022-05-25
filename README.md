@@ -27,13 +27,13 @@ cd inform/
 bash scripts/first.sh
 ```
 
-Alright. You could add those to your path, I guess, but what I settled on is actually just dropping in a Makefile in my project folder. 
+Alright. You could add those to your path, I guess, but what I settled on is actually just dropping in a `Makefile` in my project folder. 
 
 So here's how. 
 
 ### Starting a new project 
 
-Create a folder for your project, with another folder called `Source` in i, and your story.ni file in Source. And then copy in the Makefile from this project and put it next to the Source folder, so you have this: 
+Create a folder for your project, with another folder called `Source` in it, and your story.ni file in Source. And then copy in the Makefile from this project and put it next to the Source folder, so you have this: 
 
 myproject/Makefile
 myproject/Source/story.ni
