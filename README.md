@@ -4,7 +4,7 @@ So you want to be able to compile and run Inform from the command line?
 
 I mean, obviously - this is for me, *I* am that person who wants to be like the cool kids and start using the [Open sourced Inform](https://github.com/ganelson/inform). 
 
-This is what I've learned. 
+This is what I've learned. Disclaimer: I have no idea what I'm doing. These instructions may be wrong. Don't use this in aviation industries.
 
 I'm using Mac OS and [fish](https://fishshell.com/) (but using fish shell should not actually matter here). 
 
@@ -58,4 +58,12 @@ make
 
 If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. 
 
-Enjoy! 
+### Adding extensions
+
+What I have done is to clone [i7/extensions](https://github.com/i7/extensions/) - also in the `INFORM_HOME` folder, by the way.
+
+You can add a parameter `-external ${INFORM_HOME}` to the `inform7` line in the Makefile, but then it tries to compile all extensions.
+What I do instead is to just copy the extensions, including the folder with the author's name, to my project folder, and then import it in the story.ni file just like always. 
+
+
+
