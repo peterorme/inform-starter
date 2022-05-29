@@ -20,8 +20,13 @@ blorb: glulx
 	${INFORM_HOME}/inform/inblorb/Tangled/inblorb ./Release.blurb ./Build/output.gblorb
 	cp ./Build/output.gblorb ./Release/${OUTPUT}.gblorb
 
+# plays the game in the terminal, install glulxe first
 play: blorb
 	glulxe ./Release/${OUTPUT}.gblorb
+
+# "opens" the game, install Spatterlight first
+open: blorb
+	open ./Release/${OUTPUT}.gblorb
 
 clean:
 	@rm -rf Release
