@@ -35,10 +35,12 @@ So here's how.
 
 Create a folder for your project, with another folder called `Source` in it, and your story.ni file in Source. And then copy in the Makefile from this project and put it next to the Source folder, so you have this: 
 
+```
 myproject/Makefile
 myproject/Source/story.ni
+```
 
-The most minimal story.ni file you can try this with is this:
+The most minimal `story.ni` file you can try this with is this:
 
 ```inform
 There is a room.
