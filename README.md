@@ -19,7 +19,7 @@ cd ~Documents/private
 mkdir inform10
 cd inform10
 git clone https://github.com/ganelson/inweb.git
-bash inweb/scripts/first.sh linux
+bash inweb/scripts/first.sh macos
 git clone https://github.com/ganelson/intest.git
 bash intest/scripts/first.sh
 git clone https://github.com/ganelson/inform.git
