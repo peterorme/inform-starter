@@ -58,7 +58,7 @@ And then whenever you want to compile, just go
 make
 ```
 
-If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. Another good way is to install [Spatterlight](http://ccxvii.net/spatterlight/) - `brew install spatterlight` and open the output blorb file. 
+If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. Another good way is to install [Spatterlight](http://ccxvii.net/spatterlight/) - `brew install spatterlight` and open the output blorb file. Once you've installed that, you should be able to just use `open` from the command line to open the blorb file in Spatterlight, which is exactly what the `make open` command does. 
 
 ### Adding extensions
 
@@ -67,5 +67,25 @@ What I have done is to clone [i7/extensions](https://github.com/i7/extensions/) 
 You can add a parameter `-external ${INFORM_HOME}` to the `inform7` line in the Makefile, but then it tries to compile all extensions.
 What I do instead is to just copy the extensions, including the folder with the author's name, to my project folder, and then import it in the story.ni file just like always. 
 
+### Keeping inform updated
 
+I am really not sure if this is the "right" way to do it, but it seems that it works to cd into your three cloned git repos and pull from master:
+
+```shell
+cd inweb
+git pull
+cd ../intest
+git pull
+cd ../inform
+git pull
+cd ..
+```
+
+Then start over with the bash build scripts
+```shell
+bash inweb/scripts/first.sh macos
+bash intest/scripts/first.sh
+cd inform/
+bash scripts/first.sh
+```
 
