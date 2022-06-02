@@ -58,14 +58,14 @@ And then whenever you want to compile, just go
 make
 ```
 
-If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. Another good way is to install [Spatterlight](http://ccxvii.net/spatterlight/) - `brew install spatterlight` and open the output blorb file. Once you've installed that, you should be able to just use `open` from the command line to open the blorb file in Spatterlight, which is exactly what the `make open` command does. 
+If you want to play it straight in the terminal, you also need to `brew install glulxe` and then you just type `make play`. Another good way is to install [Spatterlight](http://ccxvii.net/spatterlight/) - `brew install spatterlight` - and open the output blorb file. Once you've installed that, you should be able to just use `open` from the command line to open the blorb file in Spatterlight, which is exactly what the `make open` command does. 
 
 ### Adding extensions
 
 What I have done is to clone [i7/extensions](https://github.com/i7/extensions/) - also in the `INFORM_HOME` folder, by the way.
 
 You can add a parameter `-external ${INFORM_HOME}` to the `inform7` line in the Makefile, but then it tries to compile all extensions.
-What I do instead is to just copy the extensions, including the folder with the author's name, to my project folder, and then import it in the story.ni file just like always. 
+What I do instead is to just copy the extensions I use, including the folder with the author's name, to my project folder, and then import it in the story.ni file just like always. 
 
 ### Keeping inform updated
 
